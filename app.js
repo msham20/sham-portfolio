@@ -132,6 +132,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             });
         }
+
+        // Render Socials in Footer
+        const socialContainer = document.getElementById("social-container");
+        if (socialContainer) {
+            portfolioData.socials.forEach(social => {
+                socialContainer.innerHTML += `
+                    <a href="${social.url}" class="social-link" target="_blank" aria-label="${social.name}">
+                        <i class="${social.icon}"></i>
+                    </a>
+                `;
+            });
+        }
     };
 
     initPortfolio();
