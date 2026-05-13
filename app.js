@@ -214,24 +214,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Metrics Count-up Animation
         gsap.utils.toArray(".metric-number").forEach(metric => {
-            const target = parseInt(metric.innerText);
+            const originalText = metric.innerText;
+            const target = parseInt(originalText.replace(/[^0-9]/g, ''));
+            const suffix = originalText.replace(/[0-9]/g, '');
+            
             if (isNaN(target)) return;
             
-            gsap.from(metric, {
+            const obj = { value: 0 };
+            gsap.to(obj, {
+                value: target,
+                duration: 2,
+                ease: "power2.out",
                 scrollTrigger: {
                     trigger: metric,
                     start: "top 95%",
                     toggleActions: "play none none none"
                 },
-                innerText: 0,
-                duration: 2,
-                snap: { innerText: 1 },
-                ease: "power2.out",
-                onUpdate: function() {
-                    // Re-add the '+' or suffix if it existed
-                    if (metric.innerText.indexOf('+') === -1 && target > 0) {
-                        metric.innerText += "+";
-                    }
+                onUpdate: () => {
+                    metric.innerText = Math.floor(obj.value) + suffix;
                 }
             });
         });
