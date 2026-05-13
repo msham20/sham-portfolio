@@ -88,20 +88,20 @@ const portfolioData = {
     // 6. Strategic Engagement Slots
     pricing: [
         {
-            title: "Digital Authority",
-            description: "High-performance digital foundations for brands ready to establish an immediate, premium market presence.",
-            type: "Strategic Identity",
-            price: "$1,999",
+            title: "Launch Ready",
+            description: "High-performance digital foundations for brands looking to establish an immediate elite presence.",
+            type: "Digital Identity",
+            price: "₹4,999",
             popular: false,
-            features: ["Strategic UI/UX Design", "Global Performance Core", "SEO Authority Setup", "Conversion Funnel Core", "Direct Strategic Access"]
+            features: ["Custom Premium UI/UX", "High-Speed Performance", "SEO Core Optimization", "Mobile-First Excellence", "Direct Support"]
         },
         {
-            title: "Enterprise Ecosystem",
-            description: "Comprehensive full-stack solutions and advanced platforms engineered for rapid scale and user retention.",
-            type: "Cloud Infrastructure",
-            price: "$4,499",
+            title: "Strategic Scale",
+            description: "Advanced web applications and custom platforms designed for rapid growth and user retention.",
+            type: "Full-Stack Solution",
+            price: "₹9,999",
             popular: true,
-            features: ["Custom Application Architecture", "Advanced State Management", "Strategic UX Audit", "Scalable Growth Framework", "Priority Engineering"]
+            features: ["Custom Web App Architecture", "Advanced State Management", "Strategic UX Strategy", "Conversion Optimization", "Priority Support"]
         }
     ],
 
