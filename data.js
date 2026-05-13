@@ -102,14 +102,6 @@ const portfolioData = {
             price: "$4,499",
             popular: true,
             features: ["Custom Web App Architecture", "Advanced State Management", "Strategic UX Strategy", "Conversion Optimization", "Priority Support"]
-        },
-        {
-            title: "Enterprise Core",
-            description: "Bespoke digital ecosystems and SaaS products for organizations requiring absolute technical dominance.",
-            type: "SaaS & Infrastructure",
-            price: "$8,999+",
-            popular: false,
-            features: ["Custom SaaS Development", "Complex API Ecosystems", "Dedicated Cloud Infrastructure", "Elite Security Protocol", "Long-term Advisory"]
         }
     ],
 
