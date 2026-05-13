@@ -1,0 +1,12 @@
+{
+  "name": "sham-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Web Design Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "keywords": [],
+  "author": "A.MOHAMED SHAM",
+  "license": "ISC"
+}
