@@ -220,14 +220,17 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (isNaN(target)) return;
             
+            // Set initial state to 0 + suffix
+            metric.innerText = "0" + suffix;
+
             const obj = { value: 0 };
             gsap.to(obj, {
                 value: target,
-                duration: 2,
+                duration: 2.5,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: metric,
-                    start: "top 95%",
+                    start: "top 90%",
                     toggleActions: "play none none none"
                 },
                 onUpdate: () => {
