@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             portfolioData.pricing.forEach(plan => {
                 const popularClass = plan.popular ? 'popular' : '';
                 const featuresHtml = plan.features.map(f => `<li><i class="fas fa-check-circle"></i> ${f}</li>`).join('');
-                
+
                 pricingContainer.innerHTML += `
                     <div class="pricing-card ${popularClass} reveal-up">
                         ${plan.popular ? '<div class="pricing-badge">BEST VALUE</div>' : ''}
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Render Testimonials
-        const testimonialsContainer = document.getElementById("testimonials-container");
+        const testimonialsContainer = document.getElementById("testimonial-container");
         if (testimonialsContainer) {
             portfolioData.testimonials.forEach(t => {
                 const initials = t.author.split(' ').map(n => n[0]).join('');
@@ -229,9 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const originalText = metric.innerText;
             const target = parseInt(originalText.replace(/[^0-9]/g, ''));
             const suffix = originalText.replace(/[0-9]/g, '');
-            
+
             if (isNaN(target)) return;
-            
+
             // Set initial state to 0 + suffix
             metric.innerText = "0" + suffix;
 
