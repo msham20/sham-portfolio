@@ -116,15 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const testimonialsContainer = document.getElementById("testimonials-container");
         if (testimonialsContainer) {
             portfolioData.testimonials.forEach(t => {
-                const initials = t.name.split(' ').map(n => n[0]).join('');
+                const initials = t.author.split(' ').map(n => n[0]).join('');
                 testimonialsContainer.innerHTML += `
                     <div class="testimonial-card reveal-up">
                         <i class="fas fa-quote-right quote-icon"></i>
-                        <p class="testimonial-text">"${t.text}"</p>
+                        <p class="testimonial-text">"${t.quote}"</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">${initials}</div>
                             <div class="author-info">
-                                <h4>${t.name}</h4>
+                                <h4>${t.author}</h4>
                                 <p>${t.role}</p>
                             </div>
                         </div>

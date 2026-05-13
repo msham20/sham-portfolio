@@ -1,7 +1,3 @@
-// ==========================================
-// USER CONFIGURATION - EDIT YOUR CONTENT HERE
-// ==========================================
-
 const portfolioData = {
     // 1. Personal Information
     personal: {
@@ -92,36 +88,28 @@ const portfolioData = {
     // 6. Pricing Slots
     pricing: [
         {
-            title: "Strategic Growth Pack",
-            description: "Perfect for startups and small businesses looking for a professional, high-converting entry into the market.",
-            price: "₹4,999",
-            paymentType: "STARTING FROM",
-            features: [
-                "Custom UI/UX Strategy",
-                "High-Conversion Landing Page",
-                "Automated Lead Capture",
-                "Fully Responsive Architecture",
-                "Basic SEO Foundation"
-            ],
-            buttonText: "Launch Now",
-            buttonLink: "https://forms.gle/SFMTfHiW9hQohtAZA",
-            isPopular: false
+            title: "Launch Ready",
+            description: "High-performance digital foundations for brands looking to establish an immediate elite presence.",
+            type: "Digital Identity",
+            price: "$1,999",
+            popular: false,
+            features: ["Custom Premium UI/UX", "High-Speed Performance", "SEO Core Optimization", "Mobile-First Excellence", "Direct Support"]
         },
         {
-            title: "Professional Enterprise",
-            description: "The gold standard for established brands demanding high performance, multi-page architectures, and advanced SEO.",
-            price: "₹9,999",
-            paymentType: "STARTING FROM",
-            features: [
-                "Full-Site Architecture (Up to 5 Pages)",
-                "Advanced SEO & Performance Tuning",
-                "Integrated Analytics Dashboard",
-                "Custom Animation & Interactions",
-                "Priority Support & Maintenance"
-            ],
-            buttonText: "Elevate Your Brand",
-            buttonLink: "https://forms.gle/SFMTfHiW9hQohtAZA",
-            isPopular: true
+            title: "Strategic Scale",
+            description: "Advanced web applications and custom platforms designed for rapid growth and user retention.",
+            type: "Full-Stack Solution",
+            price: "$4,499",
+            popular: true,
+            features: ["Custom Web App Architecture", "Advanced State Management", "Strategic UX Strategy", "Conversion Optimization", "Priority Support"]
+        },
+        {
+            title: "Enterprise Core",
+            description: "Bespoke digital ecosystems and SaaS products for organizations requiring absolute technical dominance.",
+            type: "SaaS & Infrastructure",
+            price: "$8,999+",
+            popular: false,
+            features: ["Custom SaaS Development", "Complex API Ecosystems", "Dedicated Cloud Infrastructure", "Elite Security Protocol", "Long-term Advisory"]
         }
     ],
 
@@ -136,9 +124,21 @@ const portfolioData = {
 
     // 8. Work Process
     process: [
-        { step: "01", title: "Audit & Discovery", desc: "We deep-dive into your business goals, target audience, and market landscape to find your competitive edge." },
-        { step: "02", title: "Strategic Blueprinting", desc: "Developing a custom technical and design roadmap focused on maximizing conversion and scalability." },
-        { step: "03", title: "Agile Development", desc: "Building your solution with clean, efficient code and real-time feedback loops to ensure perfection." },
-        { step: "04", title: "Launch & Optimization", desc: "Meticulous deployment followed by performance monitoring to ensure immediate impact and long-term success." }
+        {
+            title: "Discovery & Strategy",
+            description: "We begin by deep-diving into your brand, audience, and goals to architect a results-driven roadmap."
+        },
+        {
+            title: "Design & UX Architecture",
+            description: "Crafting a premium visual language and intuitive user journeys that align with your strategic objectives."
+        },
+        {
+            title: "Development & Engineering",
+            description: "Building your digital product with clean, scalable code and high-performance technologies."
+        },
+        {
+            title: "Launch & Growth Phase",
+            description: "Deploying your project and implementing continuous optimization strategies to ensure long-term success."
+        }
     ]
 };
