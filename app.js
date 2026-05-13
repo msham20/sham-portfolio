@@ -212,6 +212,30 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
+        // Metrics Count-up Animation
+        gsap.utils.toArray(".metric-number").forEach(metric => {
+            const target = parseInt(metric.innerText);
+            if (isNaN(target)) return;
+            
+            gsap.from(metric, {
+                scrollTrigger: {
+                    trigger: metric,
+                    start: "top 95%",
+                    toggleActions: "play none none none"
+                },
+                innerText: 0,
+                duration: 2,
+                snap: { innerText: 1 },
+                ease: "power2.out",
+                onUpdate: function() {
+                    // Re-add the '+' or suffix if it existed
+                    if (metric.innerText.indexOf('+') === -1 && target > 0) {
+                        metric.innerText += "+";
+                    }
+                }
+            });
+        });
+
         // Skill Bar Animation
         gsap.utils.toArray(".skill-bar").forEach(bar => {
             gsap.to(bar, {
